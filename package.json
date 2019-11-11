@@ -1,0 +1,27 @@
+{
+  "name": "dsmolyak.github.io",
+  "version": "1.0.0",
+  "description": "My Personal Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-scss": "node-sass --include-path scss scss/main.scss css/main.css",
+    "watch-scss": "nodemon -e scss -x \"npm run build-scss\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dsmolyak/dsmolyak.github.io.git"
+  },
+  "author": "Daniel Smolyak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dsmolyak/dsmolyak.github.io/issues"
+  },
+  "homepage": "https://github.com/dsmolyak/dsmolyak.github.io#readme",
+  "dependencies": {
+    "node-sass": "^4.13.0",
+    "nodemon": "^1.19.4",
+    "sass": "^1.23.3",
+    "scss": "^0.2.4"
+  }
+}
