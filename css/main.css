@@ -1,6 +1,32 @@
+html {
+  background-color: #b6a1c4; }
+
 #navbar .navbar-brand {
-  color: white; }
+  color: white;
+  font-size: 2em;
+  margin-left: 3rem; }
 
 #navbar .nav-link {
   color: white;
   margin-left: 3rem; }
+
+#resume-nav {
+  margin-right: 3rem; }
+
+article.body section.welcome {
+  background-color: #b6a1c4; }
+  article.body section.welcome .profile-img {
+    border-radius: 10%;
+    max-width: 100%;
+    height: 300px;
+    background-image: url(../img/website_pic.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 3px solid orange; }
+  article.body section.welcome div.text-heading {
+    font-size: 1.5em;
+    padding-left: 5rem;
+    margin-right: -10rem; }
+    article.body section.welcome div.text-heading h1 {
+      font-size: 3em; }

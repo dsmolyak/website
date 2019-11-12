@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Daniel Smolyak Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
         integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
@@ -10,6 +11,7 @@
   <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
+<article class="body">
 <nav id="navbar" class="navbar navbar-expand-md fixed-top bg-dark">
 
   <a class="navbar-brand" href="#">Daniel Smolyak</a>
@@ -22,19 +24,41 @@
   <div class="navbar-nav ml-auto" id="navbarSupportedContent">
     <ul class="navbar-nav ">
       <li class="nav-item">
-        <a id="travel-nav" class="nav-link" href="#">Bio</a>
+        <a id="bio-nav" class="nav-link" href="#">Bio</a>
       </li>
       <li class="nav-item">
-        <a id="speakers-nav" class="nav-link" href="#">Publications</a>
+        <a id="publication-nav" class="nav-link" href="#">Publications</a>
       </li>
       <li class="nav-item">
-        <a id="schedule-nav" class="nav-link" href="#">Contact</a>
+        <a id="contact-nav" class="nav-link" href="#">Contact</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="./documents/DanielSmolyakCV.pdf" target="_blank">CV</a>
+        <a id="cv-nav" class="nav-link" href="./documents/DanielSmolyakCV.pdf" target="_blank">C.V.</a>
+      </li>
+      <li class="nav-item">
+        <a id="resume-nav" class="nav-link" href="./documents/DanielSmolyakResume.pdf" target="_blank">Resume</a>
       </li>
     </ul>
   </div>
 </nav>
+
+<section class="welcome">
+  <div class="container">
+    <div style="height: 200px"></div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-4 profile-img ">
+        </div>
+        <div class="col-sm-8 text-heading">
+          <h1>Hi!</h1>
+          <p> I am an undergraduate student at the University of Maryland, College Park, studying Computer Science and Economics.</p>
+          <p> My research interests span data science, machine learning, computational social science, and computational economics, along with experience in HCI and NLP. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+</article>
 </body>
 </html>
