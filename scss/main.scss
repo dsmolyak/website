@@ -2,10 +2,15 @@
 
 html {
   background-color: $purple;
+  max-width: 100%;
 }
 
 h1 {
-  font-size: 5em;
+  font-size: 4em;
+  @media (min-width: 767.98px) {
+    font-size: 5em;
+  }
+  box-sizing: border-box;
 }
 
 p {
@@ -16,15 +21,12 @@ p {
 
   background-color: $violet !important;
 
-  .navbar-brand {
+  .navbar-brand .nav-link {
     color: white;
     font-size: 2em;
-    margin-left: 3rem;
-  }
-
-  .nav-link {
-    color: white;
-    margin-left: 3rem;
+    @media (min-width: 767.98px) {
+      margin-left: 3rem;
+    }
   }
 
 }
@@ -34,6 +36,7 @@ p {
 }
 
 article.body {
+
   section.welcome {
     background-color: $purple;
     color: white;
@@ -51,8 +54,17 @@ article.body {
     }
 
     div.text-heading {
-      padding-left: 5rem;
-      margin-right: -10rem;
+      @media (min-width: 767.98px) {
+        padding-left: 5rem;
+        margin-right: -10rem;
+      }
+      @media (max-width: 767.98px) {
+        padding-top: 5em;
+      }
+    }
+
+    h1 {
+      font-size: 5em;
     }
   }
 

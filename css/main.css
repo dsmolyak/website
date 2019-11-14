@@ -1,21 +1,25 @@
 html {
-  background-color: #8F6593; }
+  background-color: #8F6593;
+  max-width: 100%; }
 
 h1 {
-  font-size: 5em; }
+  font-size: 4em;
+  box-sizing: border-box; }
+  @media (min-width: 767.98px) {
+    h1 {
+      font-size: 5em; } }
 
 p {
   font-size: 1.5em; }
 
 #navbar {
   background-color: #372549 !important; }
-  #navbar .navbar-brand {
+  #navbar .navbar-brand .nav-link {
     color: white;
-    font-size: 2em;
-    margin-left: 3rem; }
-  #navbar .nav-link {
-    color: white;
-    margin-left: 3rem; }
+    font-size: 2em; }
+    @media (min-width: 767.98px) {
+      #navbar .navbar-brand .nav-link {
+        margin-left: 3rem; } }
 
 #cv-nav {
   margin-right: 3rem; }
@@ -33,9 +37,15 @@ article.body section.welcome {
     background-position: center;
     background-repeat: no-repeat;
     border: 3px solid #372549; }
-  article.body section.welcome div.text-heading {
-    padding-left: 5rem;
-    margin-right: -10rem; }
+  @media (min-width: 767.98px) {
+    article.body section.welcome div.text-heading {
+      padding-left: 5rem;
+      margin-right: -10rem; } }
+  @media (max-width: 767.98px) {
+    article.body section.welcome div.text-heading {
+      padding-top: 5em; } }
+  article.body section.welcome h1 {
+    font-size: 5em; }
 
 article.body section.research {
   background-color: #C4BCD0;
