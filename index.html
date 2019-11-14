@@ -12,53 +12,89 @@
 </head>
 <body>
 <article class="body">
-<nav id="navbar" class="navbar navbar-expand-md fixed-top bg-dark">
+  <nav id="navbar" class="navbar navbar-expand-md fixed-top bg-dark">
 
-  <a class="navbar-brand" href="#">Daniel Smolyak</a>
+    <a id="navbar-brand" class="navbar-brand" href="#">Daniel Smolyak</a>
 
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-  <div class="navbar-nav ml-auto" id="navbarSupportedContent">
-    <ul class="navbar-nav ">
-      <li class="nav-item">
-        <a id="bio-nav" class="nav-link" href="#">Bio</a>
-      </li>
-      <li class="nav-item">
-        <a id="publication-nav" class="nav-link" href="#">Publications</a>
-      </li>
-      <li class="nav-item">
-        <a id="contact-nav" class="nav-link" href="#">Contact</a>
-      </li>
-      <li class="nav-item">
-        <a id="cv-nav" class="nav-link" href="./documents/DanielSmolyakCV.pdf" target="_blank">C.V.</a>
-      </li>
-      <li class="nav-item">
-        <a id="resume-nav" class="nav-link" href="./documents/DanielSmolyakResume.pdf" target="_blank">Resume</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+    <div class="navbar-nav ml-auto" id="navbarSupportedContent">
+      <ul class="navbar-nav ">
+        <li class="nav-item">
+          <a id="research-nav" class="nav-link" href="#">Research</a>
+        </li>
+        <li class="nav-item">
+          <a id="publication-nav" class="nav-link" href="#">Publications</a>
+        </li>
+        <li class="nav-item">
+          <a id="contact-nav" class="nav-link" href="#">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a id="cv-nav" class="nav-link" href="./documents/DanielSmolyakCV.pdf" target="_blank">C.V.</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-<section class="welcome">
-  <div class="container">
-    <div style="height: 200px"></div>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-4 profile-img ">
-        </div>
-        <div class="col-sm-8 text-heading">
-          <h1>Hi!</h1>
-          <p> I am an undergraduate student at the University of Maryland, College Park, studying Computer Science and Economics.</p>
-          <p> My research interests span data science, machine learning, computational social science, and computational economics, along with experience in HCI and NLP. </p>
+  <section id="welcome" class="welcome">
+    <div class="container">
+      <div style="height: 200px">
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-4 profile-img ">
+          </div>
+          <div class="col-sm-8 text-heading">
+            <h1>Hi!</h1>
+            <p> I'm an undergraduate student at the University of Maryland, College Park, studying Computer Science and Economics.</p>
+            <p> My research interests span data science, machine learning, computational social science, and computational economics, along with experience in HCI and NLP. </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-</section>
+  <section id="research" class="research">
+    <div class="container">
+      <h1>Research</h1>
+      <p></p>
+      <p>
+        My past and current research spans a large number of areas of computer science, including theoretical computer science,
+        human-computer interaction, natural language processing, data science, and machine learning. Several of my research projects
+        are highlighted below.
+      </p>
+    </div>
+  </section>
+
+  <article class="footer">
+    <div class="container">
+      <p>Copyright © Daniel Smolyak 2019</p>
+    </div>
+  </article>
 </article>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+  $("#navbar-brand").click(function() {
+    $([document.documentElement, document.body]).animate({
+      scrollTop: $("#welcome").offset().top
+    }, 1300);
+    return false;
+  });
+</script>
+
+<script>
+  $("#research-nav").click(function() {
+    $([document.documentElement, document.body]).animate({
+      scrollTop: $("#research").offset().top
+    }, 1300);
+    return false;
+  });
+</script>
+
 </body>
 </html>
