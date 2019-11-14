@@ -69,6 +69,26 @@
     </div>
   </section>
 
+  <section id="publications" class="publications">
+    <div class="container">
+      <h1>Publications</h1>
+      <p></p>
+      <p>
+
+      </p>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h1>Contact</h1>
+      <p></p>
+      <p>
+
+      </p>
+    </div>
+  </section>
+
   <article class="footer">
     <div class="container">
       <p>Copyright © Daniel Smolyak 2019</p>
@@ -91,6 +111,24 @@
   $("#research-nav").click(function() {
     $([document.documentElement, document.body]).animate({
       scrollTop: $("#research").offset().top
+    }, 1300);
+    return false;
+  });
+</script>
+
+<script>
+  $("#publication-nav").click(function() {
+    $([document.documentElement, document.body]).animate({
+      scrollTop: $("#publications").offset().top
+    }, 1300);
+    return false;
+  });
+</script>
+
+<script>
+  $("#contact-nav").click(function() {
+    $([document.documentElement, document.body]).animate({
+      scrollTop: $("#contact").offset().top
     }, 1300);
     return false;
   });

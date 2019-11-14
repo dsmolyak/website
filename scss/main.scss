@@ -14,7 +14,7 @@ p {
 
 #navbar {
 
-  background-color: $darkpurple !important;
+  background-color: $violet !important;
 
   .navbar-brand {
     color: white;
@@ -28,10 +28,6 @@ p {
   }
 
 }
-
-//#resume-nav {
-//  margin-right: 3rem;
-//}
 
 #cv-nav {
   margin-right: 3rem;
@@ -51,7 +47,7 @@ article.body {
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
-      border: 3px solid $darkpurple;
+      border: 3px solid $violet;
     }
 
     div.text-heading {
@@ -61,10 +57,23 @@ article.body {
   }
 
   section.research {
-    background-color: $lavender;
+    background-color: $lavendergray;
     padding-top: 10rem;
     padding-bottom: 10rem;
 
+  }
+
+  section.publications {
+    background-color: lavender;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+
+  }
+
+  section.contact {
+    background-color: $lavendergray;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
 
   }
 }
@@ -72,7 +81,7 @@ article.body {
 article.footer {
   text-align: center;
   color: white;
-  background-color: $purple;
+  background-color: $violet;
   padding-top: 3rem;
   padding-bottom: 3rem;
 

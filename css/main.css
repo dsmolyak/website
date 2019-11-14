@@ -8,7 +8,7 @@ p {
   font-size: 1.5em; }
 
 #navbar {
-  background-color: #3B252C !important; }
+  background-color: #372549 !important; }
   #navbar .navbar-brand {
     color: white;
     font-size: 2em;
@@ -32,7 +32,7 @@ article.body section.welcome {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border: 3px solid #3B252C; }
+    border: 3px solid #372549; }
   article.body section.welcome div.text-heading {
     padding-left: 5rem;
     margin-right: -10rem; }
@@ -42,10 +42,20 @@ article.body section.research {
   padding-top: 10rem;
   padding-bottom: 10rem; }
 
+article.body section.publications {
+  background-color: lavender;
+  padding-top: 10rem;
+  padding-bottom: 10rem; }
+
+article.body section.contact {
+  background-color: #C4BCD0;
+  padding-top: 10rem;
+  padding-bottom: 10rem; }
+
 article.footer {
   text-align: center;
   color: white;
-  background-color: #8F6593;
+  background-color: #372549;
   padding-top: 3rem;
   padding-bottom: 3rem; }
   article.footer p {
