@@ -4,21 +4,29 @@ html {
 
 h1 {
   font-size: 4em;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: Avenir; }
   @media (min-width: 767.98px) {
     h1 {
       font-size: 5em; } }
 
 p {
-  font-size: 1.5em; }
+  font-size: 1.5em;
+  font-family: Avenir; }
 
 #navbar {
-  background-color: #372549 !important; }
-  #navbar .navbar-brand .nav-link {
-    color: white;
-    font-size: 2em; }
+  background-color: #372549 !important;
+  font-family: Avenir; }
+  #navbar .navbar-brand {
+    font-size: 2em;
+    color: white; }
     @media (min-width: 767.98px) {
-      #navbar .navbar-brand .nav-link {
+      #navbar .navbar-brand {
+        margin-left: 3rem; } }
+  #navbar .nav-link {
+    color: white; }
+    @media (min-width: 767.98px) {
+      #navbar .nav-link {
         margin-left: 3rem; } }
 
 #cv-nav {
@@ -60,7 +68,37 @@ article.body section.publications {
 article.body section.contact {
   background-color: #C4BCD0;
   padding-top: 10rem;
-  padding-bottom: 10rem; }
+  padding-bottom: 10rem;
+  /* Add a hover effect if you want */
+  /* Set a specific color for each brand */
+  /* Facebook */
+  /* Twitter */ }
+  article.body section.contact .buttons {
+    display: flex;
+    justify-content: center; }
+  article.body section.contact h1 {
+    text-align: center; }
+  article.body section.contact p {
+    text-align: center; }
+  article.body section.contact .btn {
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    margin: 1rem;
+    border-radius: 20%; }
+  article.body section.contact .fa {
+    font-size: 3em;
+    margin-top: 1rem; }
+  article.body section.contact .fa:hover {
+    opacity: 0.7; }
+  article.body section.contact .fa-github {
+    color: white; }
+  article.body section.contact .fa-linkedin {
+    color: white; }
+  article.body section.contact .fa-twitter {
+    color: white; }
+  article.body section.contact .fa-instagram {
+    color: white; }
 
 article.footer {
   text-align: center;

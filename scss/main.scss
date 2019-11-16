@@ -1,5 +1,7 @@
 @import "vars";
 
+
+
 html {
   background-color: $purple;
   max-width: 100%;
@@ -11,19 +13,30 @@ h1 {
     font-size: 5em;
   }
   box-sizing: border-box;
+  font-family: Avenir;
 }
 
 p {
   font-size: 1.5em;
+  font-family: Avenir;
 }
 
 #navbar {
 
   background-color: $violet !important;
+  font-family: Avenir;
 
-  .navbar-brand .nav-link {
-    color: white;
+
+  .navbar-brand {
     font-size: 2em;
+    color: white;
+    @media (min-width: 767.98px) {
+      margin-left: 3rem;
+    }
+  }
+
+  .nav-link {
+    color: white;
     @media (min-width: 767.98px) {
       margin-left: 3rem;
     }
@@ -86,6 +99,57 @@ article.body {
     background-color: $lavendergray;
     padding-top: 10rem;
     padding-bottom: 10rem;
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    p {
+      text-align: center;
+    }
+
+    .btn {
+      width: 70px;
+      height: 70px;
+      text-align: center;
+      margin: 1rem;
+      border-radius: 20%;
+    }
+
+    .fa {
+      font-size: 3em;
+      margin-top: 1rem;
+    }
+
+    /* Add a hover effect if you want */
+    .fa:hover {
+      opacity: 0.7;
+    }
+
+    /* Set a specific color for each brand */
+
+    /* Facebook */
+    .fa-github {
+      color: white;
+    }
+
+    .fa-linkedin {
+      color: white;
+    }
+
+    /* Twitter */
+    .fa-twitter {
+      color: white;
+    }
+
+    .fa-instagram {
+      color: white;
+    }
 
   }
 }
