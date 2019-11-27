@@ -28,6 +28,12 @@ p {
     @media (min-width: 767.98px) {
       #navbar .nav-link {
         margin-left: 3rem; } }
+  #navbar .dropdown-menu {
+    background-color: #C4BCD0; }
+    #navbar .dropdown-menu .dropdown-item {
+      background-color: #C4BCD0; }
+  #navbar .dropdown:hover .dropdown-menu {
+    display: block; }
 
 #cv-nav {
   margin-right: 3rem; }

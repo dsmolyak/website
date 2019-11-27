@@ -42,6 +42,16 @@ p {
     }
   }
 
+  .dropdown-menu {
+    background-color: $lavendergray;
+
+    .dropdown-item {
+      background-color: $lavendergray;
+    }
+  }
+
+  .dropdown:hover .dropdown-menu {display: block;}
+
 }
 
 #cv-nav {
