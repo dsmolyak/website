@@ -21,6 +21,8 @@ p {
   background-color: rgba(69, 69, 69, 0);
   font-family: Avenir;
   color: white; }
+  #navbar .navbar-toggler {
+    color: black; }
   #navbar .navbar-brand {
     color: black;
     font-weight: bold; }
@@ -48,6 +50,8 @@ p {
   .changeColor .navbar-brand {
     color: white !important; }
   .changeColor .nav-link {
+    color: white !important; }
+  .changeColor .navbar-toggler {
     color: white !important; }
 
 #cv-nav {

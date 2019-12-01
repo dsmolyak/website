@@ -31,6 +31,10 @@ p {
   font-family: Avenir;
   color: white;
 
+  .navbar-toggler {
+    color: black;
+  }
+
 
   .navbar-brand {
     //font-size: 2em;
@@ -39,10 +43,6 @@ p {
     @media (min-width: 767.98px) {
       margin-left: 3rem;
     }
-  }
-
-  .navbar-toggler {
-
   }
 
   .nav-link {
@@ -71,6 +71,9 @@ p {
     color: white !important;
   }
   .nav-link {
+    color: white !important;
+  }
+  .navbar-toggler {
     color: white !important;
   }
 
