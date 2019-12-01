@@ -27,20 +27,21 @@
 
     <div class="navbar-collapse collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
-<!--        <li class="nav-item">-->
-<!--          <a id="research-nav" class="nav-link" href="#">Research</a>-->
-<!--        </li>-->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Research
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="#">Muffins</a>
-            <a class="dropdown-item" href="#">Health Informatics</a>
-            <a class="dropdown-item" href="#">Sports Analytics</a>
-            <a class="dropdown-item" href="#">GANs + Mobility</a>
-          </div>
+        <li class="nav-item">
+          <a id="research-nav" class="nav-link" href="#">Research</a>
         </li>
+<!--        <li class="nav-item dropdown">-->
+<!--          <a id="research-nav" class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+<!--            Research-->
+<!--          </a>-->
+<!--          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">-->
+<!--            <a class="dropdown-item" href="#">Muffins</a>-->
+<!--            <a class="dropdown-item" href="#">Health Informatics</a>-->
+<!--            <a class="dropdown-item" href="#">Sports Analytics</a>-->
+<!--            <a class="dropdown-item" href="#">GANs + Mobility</a>-->
+<!--          </div>-->
+<!--        </li>-->
+
         <li class="nav-item">
           <a id="publication-nav" class="nav-link" href="#">Publications</a>
         </li>
@@ -90,7 +91,7 @@
             Given m muffins and s students, how can the muffins be divided evenly among the students,
             such that we maximize the smallest piece of muffin? In pursuit of solving this challenge,
             I worked with  <a href="http://www.cs.umd.edu/~gasarch/MUFFINS/muffins.html" target="_blank">Prof. Gasarch</a>
-            and a team of students, creating a battery of techniques,
+            and a team of students creating a battery of techniques,
             delving into combinatorics, algorithms, mixed integer programming, and topology.
             I developed a method that used combinatorial approaches to derive upper bounds on the smallest piece of muffin,
             for certain cases of m and s, and created an algorithm to automatically generate these bounds.
@@ -98,11 +99,11 @@
           <p>
             Aspects of our work were published in the 9th International Conference on FUN with Algorithms (FUN 2018),
             a premier conference in the use of algorithms for results that are amusing, but nonetheless “scientifically profound”.
-            I am also a co-author of the upcoming book, Mathematical Muffin Morsels, published by World Scientific.
+            I am also a co-author of the upcoming book, <i>Mathematical Muffin Morsels</i>, published by World Scientific.
           </p>
         </div>
         <div class="col-sm-3">
-          <img src="img/book_cover.jpg">
+          <a href="https://doi.org/10.1142/11689" target="_blank"><img src="img/book_cover.jpg"></a>
         </div>
       </div>
 
@@ -185,7 +186,7 @@
 <script>
   $("#research-nav").click(function() {
     $([document.documentElement, document.body]).animate({
-      scrollTop: $("#research").offset().top
+      scrollTop: $("#research").offset().top - 50
     }, 1300);
     return false;
   });
@@ -194,7 +195,7 @@
 <script>
   $("#publication-nav").click(function() {
     $([document.documentElement, document.body]).animate({
-      scrollTop: $("#publications").offset().top
+      scrollTop: $("#publications").offset().top - 50
     }, 1300);
     return false;
   });
