@@ -95,6 +95,13 @@ article.body section.research {
   background-color: #bddec2;
   padding-top: 2rem;
   padding-bottom: 2rem; }
+  article.body section.research .book-img {
+    max-width: 100%;
+    height: 30rem;
+    background-image: url(../img/book_cover.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
 
 article.body section.publications {
   background-color: white;
