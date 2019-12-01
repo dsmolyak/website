@@ -41,6 +41,10 @@ p {
     }
   }
 
+  .navbar-toggler {
+
+  }
+
   .nav-link {
     color: black;
     font-weight: bold;
@@ -50,10 +54,10 @@ p {
   }
 
   .dropdown-menu {
-    background-color: $lavendergray;
+    background-color: $green;
 
     .dropdown-item {
-      background-color: $lavendergray;
+      background-color: $green;
     }
   }
 
@@ -127,7 +131,8 @@ article.body {
       }
 
       @media (max-width: 767.98px) {
-        padding-top: 5em;
+        padding-top: 3em;
+        margin-left: -0.8em;
       }
     }
 

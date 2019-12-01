@@ -34,9 +34,9 @@ p {
       #navbar .nav-link {
         margin-left: 3rem; } }
   #navbar .dropdown-menu {
-    background-color: #C4BCD0; }
+    background-color: #bddec2; }
     #navbar .dropdown-menu .dropdown-item {
-      background-color: #C4BCD0; }
+      background-color: #bddec2; }
   #navbar .dropdown:hover .dropdown-menu {
     display: block; }
 
@@ -86,7 +86,8 @@ article.body section.welcome {
       margin-right: -10rem; } }
   @media (max-width: 767.98px) {
     article.body section.welcome div.text-heading {
-      padding-top: 5em; } }
+      padding-top: 3em;
+      margin-left: -0.8em; } }
   article.body section.welcome h1 {
     font-size: 5em; }
 
