@@ -3,7 +3,7 @@
 
 
 html {
-  background-color: $purple;
+  background-color: white;
   max-width: 100%;
 }
 
@@ -16,6 +16,10 @@ h1 {
   font-family: Avenir;
 }
 
+h2 {
+  font-size: 3em;
+}
+
 p {
   font-size: 1.5em;
   font-family: Avenir;
@@ -23,20 +27,23 @@ p {
 
 #navbar {
 
-  background-color: $violet !important;
+  background-color: rgba(69,69,69,0);;
   font-family: Avenir;
+  color: white;
 
 
   .navbar-brand {
-    font-size: 2em;
-    color: white;
+    //font-size: 2em;
+    color: black;
+    font-weight: bold;
     @media (min-width: 767.98px) {
       margin-left: 3rem;
     }
   }
 
   .nav-link {
-    color: white;
+    color: black;
+    font-weight: bold;
     @media (min-width: 767.98px) {
       margin-left: 3rem;
     }
@@ -54,6 +61,20 @@ p {
 
 }
 
+.changeColor {
+  background-color: darkslategrey !important;
+  .navbar-brand {
+    color: white !important;
+  }
+  .nav-link {
+    color: white !important;
+  }
+
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.05);
+  -moz-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.05);
+  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.05);
+}
+
 #cv-nav {
   margin-right: 3rem;
 }
@@ -61,15 +82,37 @@ p {
 article.body {
 
   section.welcome {
-    background-color: $purple;
-    color: white;
-    padding-bottom: 10rem;
+    //background-color: $purple;
+    color: black;
+    padding-bottom: 3rem;
+
+    .big-name {
+      text-align: center;
+      position: relative;
+      height: 30rem;
+      background-image: url(../img/cover_pic.jpeg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: white;
+
+      h1 {
+        position: absolute;
+        top: 35%;
+        left: 0%;
+        right: 40%;
+      }
+    }
+
+    .profile {
+      padding-top: 3rem;
+    }
 
     .profile-img {
-      border-radius: 10%;
+      //border-radius: 20%;
       max-width: 100%;
-      height: 300px;
-      background-image: url(../img/profile2.jpg);
+      height: 325px;
+      background-image: url(../img/profile_3.jpeg);
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -77,10 +120,9 @@ article.body {
     }
 
     div.text-heading {
-      @media (min-width: 767.98px) {
-        padding-left: 5rem;
-        margin-right: -10rem;
-      }
+      padding-left: 5rem;
+      margin-right: -10rem;
+
       @media (max-width: 767.98px) {
         padding-top: 5em;
       }
@@ -92,23 +134,27 @@ article.body {
   }
 
   section.research {
-    background-color: $lavendergray;
-    padding-top: 10rem;
-    padding-bottom: 10rem;
+    background-color: $green;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 
   }
 
   section.publications {
-    background-color: lavender;
-    padding-top: 10rem;
-    padding-bottom: 10rem;
+    background-color: white;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    p {
+      margin-bottom: 2rem;
+    }
 
   }
 
   section.contact {
-    background-color: $lavendergray;
-    padding-top: 10rem;
-    padding-bottom: 10rem;
+    background-color: $green;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 
     .buttons {
       display: flex;
@@ -136,8 +182,17 @@ article.body {
       margin-top: 1rem;
     }
 
+    .ai {
+      font-size: 3em;
+      margin-top: 1rem;
+    }
+
     /* Add a hover effect if you want */
     .fa:hover {
+      opacity: 0.7;
+    }
+
+    .ai:hover {
       opacity: 0.7;
     }
 
@@ -161,13 +216,17 @@ article.body {
       color: white;
     }
 
+    .ai-google-scholar {
+      color: white;
+    }
+
   }
 }
 
 article.footer {
   text-align: center;
   color: white;
-  background-color: $violet;
+  background-color: darkslategrey;
   padding-top: 3rem;
   padding-bottom: 3rem;
 

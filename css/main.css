@@ -1,5 +1,5 @@
 html {
-  background-color: #8F6593;
+  background-color: white;
   max-width: 100%; }
 
 h1 {
@@ -10,21 +10,26 @@ h1 {
     h1 {
       font-size: 5em; } }
 
+h2 {
+  font-size: 3em; }
+
 p {
   font-size: 1.5em;
   font-family: Avenir; }
 
 #navbar {
-  background-color: #372549 !important;
-  font-family: Avenir; }
+  background-color: rgba(69, 69, 69, 0);
+  font-family: Avenir;
+  color: white; }
   #navbar .navbar-brand {
-    font-size: 2em;
-    color: white; }
+    color: black;
+    font-weight: bold; }
     @media (min-width: 767.98px) {
       #navbar .navbar-brand {
         margin-left: 3rem; } }
   #navbar .nav-link {
-    color: white; }
+    color: black;
+    font-weight: bold; }
     @media (min-width: 767.98px) {
       #navbar .nav-link {
         margin-left: 3rem; } }
@@ -35,46 +40,71 @@ p {
   #navbar .dropdown:hover .dropdown-menu {
     display: block; }
 
+.changeColor {
+  background-color: darkslategrey !important;
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05); }
+  .changeColor .navbar-brand {
+    color: white !important; }
+  .changeColor .nav-link {
+    color: white !important; }
+
 #cv-nav {
   margin-right: 3rem; }
 
 article.body section.welcome {
-  background-color: #8F6593;
-  color: white;
-  padding-bottom: 10rem; }
+  color: black;
+  padding-bottom: 3rem; }
+  article.body section.welcome .big-name {
+    text-align: center;
+    position: relative;
+    height: 30rem;
+    background-image: url(../img/cover_pic.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white; }
+    article.body section.welcome .big-name h1 {
+      position: absolute;
+      top: 35%;
+      left: 0%;
+      right: 40%; }
+  article.body section.welcome .profile {
+    padding-top: 3rem; }
   article.body section.welcome .profile-img {
-    border-radius: 10%;
     max-width: 100%;
-    height: 300px;
-    background-image: url(../img/profile2.jpg);
+    height: 325px;
+    background-image: url(../img/profile_3.jpeg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     border: 3px solid #372549; }
-  @media (min-width: 767.98px) {
-    article.body section.welcome div.text-heading {
-      padding-left: 5rem;
-      margin-right: -10rem; } }
-  @media (max-width: 767.98px) {
-    article.body section.welcome div.text-heading {
-      padding-top: 5em; } }
+  article.body section.welcome div.text-heading {
+    padding-left: 5rem;
+    margin-right: -10rem; }
+    @media (max-width: 767.98px) {
+      article.body section.welcome div.text-heading {
+        padding-top: 5em; } }
   article.body section.welcome h1 {
     font-size: 5em; }
 
 article.body section.research {
-  background-color: #C4BCD0;
-  padding-top: 10rem;
-  padding-bottom: 10rem; }
+  background-color: #bddec2;
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
 
 article.body section.publications {
-  background-color: lavender;
-  padding-top: 10rem;
-  padding-bottom: 10rem; }
+  background-color: white;
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+  article.body section.publications p {
+    margin-bottom: 2rem; }
 
 article.body section.contact {
-  background-color: #C4BCD0;
-  padding-top: 10rem;
-  padding-bottom: 10rem;
+  background-color: #bddec2;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   /* Add a hover effect if you want */
   /* Set a specific color for each brand */
   /* Facebook */
@@ -95,7 +125,12 @@ article.body section.contact {
   article.body section.contact .fa {
     font-size: 3em;
     margin-top: 1rem; }
+  article.body section.contact .ai {
+    font-size: 3em;
+    margin-top: 1rem; }
   article.body section.contact .fa:hover {
+    opacity: 0.7; }
+  article.body section.contact .ai:hover {
     opacity: 0.7; }
   article.body section.contact .fa-github {
     color: white; }
@@ -105,11 +140,13 @@ article.body section.contact {
     color: white; }
   article.body section.contact .fa-instagram {
     color: white; }
+  article.body section.contact .ai-google-scholar {
+    color: white; }
 
 article.footer {
   text-align: center;
   color: white;
-  background-color: #372549;
+  background-color: darkslategrey;
   padding-top: 3rem;
   padding-bottom: 3rem; }
   article.footer p {
