@@ -1,6 +1,14 @@
 html {
   background-color: white;
-  max-width: 100%; }
+  margin: 0 auto;
+  padding: 0;
+  overflow: auto; }
+
+body {
+  min-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  overflow: auto; }
 
 h1 {
   font-size: 4em;
@@ -89,10 +97,9 @@ article.body section.research {
   background-color: #bddec2;
   padding-top: 2rem;
   padding-bottom: 2rem; }
-  article.body section.research img.center {
+  article.body section.research img {
     display: block;
-    margin: 0 auto; }
-  article.body section.research img.left {
+    margin: 0 auto;
     max-width: 100%; }
 
 article.body section.publications {

@@ -2,7 +2,16 @@
 
 html {
   background-color: white;
-  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  overflow: auto;
+}
+
+body {
+  min-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  overflow: auto;
 }
 
 h1 {
@@ -131,12 +140,9 @@ article.body {
     padding-top: 2rem;
     padding-bottom: 2rem;
 
-    img.center {
+    img {
       display: block;
       margin: 0 auto;
-    }
-
-    img.left {
       max-width: 100%;
     }
   }
