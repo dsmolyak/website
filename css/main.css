@@ -11,29 +11,22 @@ h1 {
       font-size: 5em; } }
 
 h2 {
-  font-size: 3em; }
+  font-size: 3em;
+  font-family: Avenir; }
 
 p {
   font-size: 1.5em;
   font-family: Avenir; }
 
 #navbar {
-  background-color: rgba(69, 69, 69, 0);
-  font-family: Avenir;
-  color: white; }
+  font-family: Avenir; }
   #navbar .navbar-toggler {
     color: black; }
-  #navbar .navbar-brand {
+  #navbar .nav-link, #navbar .navbar-brand {
     color: black;
     font-weight: bold; }
     @media (min-width: 767.98px) {
-      #navbar .navbar-brand {
-        margin-left: 3rem; } }
-  #navbar .nav-link {
-    color: black;
-    font-weight: bold; }
-    @media (min-width: 767.98px) {
-      #navbar .nav-link {
+      #navbar .nav-link, #navbar .navbar-brand {
         margin-left: 3rem; } }
   #navbar .dropdown-menu {
     background-color: #bddec2; }
@@ -44,15 +37,13 @@ p {
 
 .changeColor {
   background-color: darkslategrey !important;
+  transition: background-color 200ms linear;
   -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
   -moz-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05); }
-  .changeColor .navbar-brand {
-    color: white !important; }
-  .changeColor .nav-link {
-    color: white !important; }
-  .changeColor .navbar-toggler {
-    color: white !important; }
+  .changeColor .navbar-brand, .changeColor .nav-link, .changeColor .navbar-toggler {
+    color: white !important;
+    transition: color 200ms linear; }
 
 #cv-nav {
   margin-right: 3rem; }
@@ -63,7 +54,7 @@ article.body section.welcome {
   article.body section.welcome .big-name {
     text-align: center;
     position: relative;
-    height: 40rem;
+    height: 40em;
     background-image: url(../img/cover_pic.jpeg);
     background-size: cover;
     background-position: center;
@@ -98,13 +89,9 @@ article.body section.research {
   background-color: #bddec2;
   padding-top: 2rem;
   padding-bottom: 2rem; }
-  article.body section.research .book-img {
-    max-width: 100%;
-    height: 30rem;
-    background-image: url(../img/book_cover.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; }
+  article.body section.research img.center {
+    display: block;
+    margin: 0 auto; }
 
 article.body section.publications {
   background-color: white;

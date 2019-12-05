@@ -65,8 +65,8 @@
           <div class="col-sm-4 profile-img ">
           </div>
           <div class="col-sm-8 text-heading">
-            <h1>Hi!</h1>
-            <p> I'm a senior undergraduate student at the University of Maryland, College Park, studying Computer Science and Economics.</p>
+            <h1>Hello!</h1>
+            <p> I'm a senior undergraduate at the University of Maryland, College Park, studying Computer Science and Economics.</p>
             <p> My research interests span data science, machine learning, computational social science, and computational economics, along with experience in HCI and NLP. </p>
           </div>
         </div>
@@ -79,7 +79,9 @@
       <h1>Research</h1>
       <p></p>
       <p>
-        My past and current projects include: <a id="muffin-nav" href="#">The Muffin Problem</a>, Multimodal Exercise Tracking, NBA Data Analytics,
+        My past and current projects include:
+        <a id="muffin-nav" href="#">The Muffin Problem</a>,
+        <a id="exercise-nav" href="#">Multimodal Exercise Assistance</a>, NBA Data Analytics,
         GANs for Anomaly Detection, Faceted Search, and Social Media Personality Detection.
       </p>
       <p></p>
@@ -88,13 +90,13 @@
       <div class="row">
         <div class="col-sm-9 text-heading">
           <p>
-            Given m muffins and s students, how can the muffins be divided evenly among the students,
+            Given <i>m</i> muffins and <i>s</i> students, how can the muffins be divided evenly among the students,
             such that we maximize the smallest piece of muffin? In pursuit of solving this challenge,
-            I worked with  <a href="http://www.cs.umd.edu/~gasarch/MUFFINS/muffins.html" target="_blank">Prof. Gasarch</a>
+            I worked with  <a href="http://www.cs.umd.edu/~gasarch/MUFFINS/muffins.html" target="_blank">Prof. William Gasarch</a>
             and a team of students creating a battery of techniques,
             delving into combinatorics, algorithms, mixed integer programming, and topology.
             I developed a method that used combinatorial approaches to derive upper bounds on the smallest piece of muffin,
-            for certain cases of m and s, and created an algorithm to automatically generate these bounds.
+            for certain cases of <i>m</i> and <i>s</i>, and created an algorithm to automatically generate these bounds.
           </p>
           <p>
             Aspects of our work were published in the 9th International Conference on FUN with Algorithms (FUN 2018),
@@ -103,15 +105,38 @@
           </p>
         </div>
         <div class="col-sm-3">
-          <a href="https://doi.org/10.1142/11689" target="_blank"><img src="img/book_cover.jpg"></a>
+          <a href="https://doi.org/10.1142/11689" target="_blank"><img class="center" src="img/book_cover.jpg"></a>
         </div>
       </div>
-
-<!--      <h3>GANs for Anomaly Detection</h3>-->
-<!--      <p></p>-->
-<!--      <p style="font-size: 1.25em">-->
-<!--        As part of the Data Science REU at IUPUI in the summer of 2018, I researched the use of GANs with human mobility data.-->
-<!--      </p>-->
+      <p></p>
+      <div class="row">
+        <div class="col-sm-3">
+        </div>
+        <div class="col-sm-9">
+          <h2 id="exercise"><u>Multimodal Exercise Assistance</u></h2>
+        </div>
+      </div>
+      <p></p>
+      <div class="row">
+        <div class="col-sm-3">
+          <img class="center" src="img/exercise_screen.png">
+        </div>
+        <div class="col-sm-9 text-heading">
+          <p>
+            Helping individuals maintain exercise behaviors has long been a subject of study within health informatics.
+            After seeing extensive research on mobile apps this purpose, we decided to investigate the potential of smart speakers,
+            such as the Amazon Echo. Together with my advisor, Prof. Eun Kyoung Choe, and our collaborator from Microsoft Research,
+            Dr. Bongshin Lee, we developed a study comparing the effectiveness of smart speaker skills versus mobile apps
+            in encouraging consistent exercise behavior. As the main investigator in this project,
+            I was instrumental in our collective decisions on our study design, applying for IRB approval,
+            and implementing the mobile app, smart speaker skill, and database to integrate the tracking data collected by either device.
+          </p>
+          <p>
+            We submitted this study proposal and successfully published it in the 2018 CHI Conference on Human Factors in
+            Computing Systems, Late Breaking Works track, where I presented a poster on our work, as the first author.
+          </p>
+        </div>
+      </div>
 
     </div>
   </section>
@@ -214,6 +239,15 @@
   $("#muffin-nav").click(function() {
     $([document.documentElement, document.body]).animate({
       scrollTop: $("#muffins").offset().top - 65
+    }, 1300);
+    return false;
+  });
+</script>
+
+<script>
+  $("#exercise-nav").click(function() {
+    $([document.documentElement, document.body]).animate({
+      scrollTop: $("#exercise").offset().top - 65
     }, 1300);
     return false;
   });
