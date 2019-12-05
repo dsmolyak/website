@@ -92,6 +92,8 @@ article.body section.research {
   article.body section.research img.center {
     display: block;
     margin: 0 auto; }
+  article.body section.research img.left {
+    max-width: 100%; }
 
 article.body section.publications {
   background-color: white;
