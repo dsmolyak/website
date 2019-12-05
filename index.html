@@ -82,7 +82,8 @@
         My past and current projects include:
         <a id="muffin-nav" href="#">The Muffin Problem</a>,
         <a id="exercise-nav" href="#">Multimodal Exercise Assistance</a>, NBA Data Analytics,
-        GANs for Anomaly Detection, Faceted Search, and Social Media Personality Detection.
+        <a id="gans-nav" href="#">GANs for Anomaly Detection</a>,
+         Faceted Search, and Social Media Personality Detection.
       </p>
       <p></p>
       <h2 id="muffins"><u>The Muffin Problem</u></h2>
@@ -92,7 +93,7 @@
           <p>
             Given <i>m</i> muffins and <i>s</i> students, how can the muffins be divided evenly among the students,
             such that we maximize the smallest piece of muffin? In pursuit of solving this challenge,
-            I worked with  <a href="http://www.cs.umd.edu/~gasarch/MUFFINS/muffins.html" target="_blank">Prof. William Gasarch</a>
+            I worked with  <a href="http://www.cs.umd.edu/~gasarch/" target="_blank">Prof. William Gasarch</a>
             and a team of students creating a battery of techniques,
             delving into combinatorics, algorithms, mixed integer programming, and topology.
             I developed a method that used combinatorial approaches to derive upper bounds on the smallest piece of muffin,
@@ -146,7 +147,8 @@
           <p>
             During the summer of 2018, I participated in the Indiana University-Purdue University of Indianapolis (IUPUI)
             Data Science NSF REU, conducting research with another undergraduate student and a graduate student
-            under our advisor Prof. George Mohler.  We further developed a technique for anomaly detection with
+            under our advisor <a href="https://www.georgemohler.com/" target="_blank">Prof. George Mohler</a>.
+            We further developed a technique for anomaly detection with
             generative adversarial networks (GANs). After finding lower-dimensional embeddings of image data with
             bidirectional GANs, we used the infinite-gaussian mixture model clustering algorithm to find an “anomalous” class.
             We applied this technique to human mobility data, successfully distinguishing different drivers based on their GPS data.
@@ -270,6 +272,15 @@
   $("#exercise-nav").click(function() {
     $([document.documentElement, document.body]).animate({
       scrollTop: $("#exercise").offset().top - 65
+    }, 1300);
+    return false;
+  });
+</script>
+
+<script>
+  $("#gans-nav").click(function() {
+    $([document.documentElement, document.body]).animate({
+      scrollTop: $("#gans").offset().top - 65
     }, 1300);
     return false;
   });
