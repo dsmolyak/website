@@ -89,6 +89,9 @@ article.body {
       position: relative;
       height: 40em;
       background-image: url(../img/cover_pic.jpeg);
+      @media (min-width: 1650px) {
+        height: 47em;
+      }
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
