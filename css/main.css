@@ -81,7 +81,7 @@ article.body section.welcome {
   article.body section.welcome .profile-img {
     max-width: 100%;
     height: 325px;
-    background-image: url(../img/profile_3.jpeg);
+    background-image: url(../img/profile_4.jpeg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -131,7 +131,7 @@ article.body section.contact {
     width: 70px;
     height: 70px;
     text-align: center;
-    margin: 1rem;
+    margin: 0rem 1rem 1rem;
     border-radius: 20%; }
   article.body section.contact .fa {
     font-size: 3em;
@@ -153,6 +153,13 @@ article.body section.contact {
     color: white; }
   article.body section.contact .ai-google-scholar {
     color: white; }
+  article.body section.contact .fa-envelope-o {
+    font-size: 2em;
+    margin-top: -0.25rem; }
+  article.body section.contact .fa-ul {
+    text-align: center; }
+    article.body section.contact .fa-ul li {
+      display: inline-block; }
 
 article.footer {
   text-align: center;
