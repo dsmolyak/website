@@ -233,6 +233,10 @@ article.body {
     .fa-envelope-o {
       font-size: 2em;
       margin-top: -0.25rem;
+
+      &:hover {
+        opacity: 1.0;
+      }
     }
 
     .fa-ul {

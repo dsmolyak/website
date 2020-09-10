@@ -156,6 +156,8 @@ article.body section.contact {
   article.body section.contact .fa-envelope-o {
     font-size: 2em;
     margin-top: -0.25rem; }
+    article.body section.contact .fa-envelope-o:hover {
+      opacity: 1.0; }
   article.body section.contact .fa-ul {
     text-align: center; }
     article.body section.contact .fa-ul li {
