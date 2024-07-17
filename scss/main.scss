@@ -1,3 +1,5 @@
+// sass --watch scss/main.scss css/main.css
+
 @import "vars";
 
 html {
@@ -113,7 +115,7 @@ article.body {
       //border-radius: 20%;
       max-width: 100%;
       height: 325px;
-      background-image: url(../img/profile_4.jpeg);
+      background-image: url(../img/mmorgan_240117_98987.jpg);
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
